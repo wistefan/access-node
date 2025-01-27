@@ -8,7 +8,7 @@ desmos:
     ## image repository
     repository: in2workspace/in2-desmos-api
     # Overrides the image tag whose default is the chart appVersion.
-    tag: v1.0.6
+    tag: v1.0.7-snapshot
     ## image pull policy
     pullPolicy: IfNotPresent
   ## deployment specific configuration
@@ -65,6 +65,17 @@ desmos:
         name: <PRIVATE-KEY-SECRET>
         # -- key to retrieve the password from
         key: <PRIVATE-KEY>
+    # -- configuration to set your lear credential machine in base64
+    learCredentialMachineInBase64:
+      # -- your lear credential machine in base64
+      value: your-lear-credential-machine-in-base64
+      existingSecret:
+        # -- should an existing secret be used
+        enabled: false
+        # -- name of the secret
+        name: lear-credential-machine-secret
+        # -- key to retrieve the password from
+        key: lear-credential-machine
     ## configuration of the database to be used by the blockchain-connector
   db:
     # -- host of the db

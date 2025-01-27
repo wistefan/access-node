@@ -8,7 +8,7 @@ dependencies:
   - name: desmos
     condition: desmos.enabled
     repository: https://in2workspace.github.io/helm-charts
-    version: 1.0.4
+    version: 1.0.5
   - name: dlt-adapter
     condition: dlt-adapter.enabled
     repository: https://alastria.github.io/helm-charts
