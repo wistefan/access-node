@@ -2,13 +2,13 @@ apiVersion: v2
 name: access-node
 description: Umbrella Chart for the DOME Marketplace access-node
 type: application
-version: 0.8.2-PRE-68
+version: 0.8.3-PRE-66
 appVersion: 0.0.1
 dependencies:
   - name: desmos
     condition: desmos.enabled
     repository: https://in2workspace.github.io/helm-charts
-    version: 1.0.4
+    version: 1.0.6
   - name: dlt-adapter
     condition: dlt-adapter.enabled
     repository: https://alastria.github.io/helm-charts
